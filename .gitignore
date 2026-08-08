@@ -1,0 +1,10 @@
+*.class 
+
+# Step 1 — .gitignore banao
+# VS Code Explorer me DSA 2026 folder pe right-click → New File:
+# .gitignore
+
+# Usme likho:
+# *.class
+# Save.
+# Iska matlab: Java ke compiled .class files GitHub pe nahi jayenge.
