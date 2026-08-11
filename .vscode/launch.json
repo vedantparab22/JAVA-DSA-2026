@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BASIC_MATHS",
+      "request": "launch",
+      "mainClass": "BASIC_MATHS",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
       "name": "STRINGS_BASICS",
       "request": "launch",
       "mainClass": "STRINGS_BASICS",
