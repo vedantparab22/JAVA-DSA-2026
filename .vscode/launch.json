@@ -1,21 +1,42 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "PATTERN_BASED",
-            "request": "launch",
-            "mainClass": "PATTERN_BASED",
-            "projectName": "DSA 2026_4585aac1"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "STRINGS_BASICS",
+      "request": "launch",
+      "mainClass": "STRINGS_BASICS",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "ARRAY_BASICS",
+      "request": "launch",
+      "mainClass": "ARRAY_BASICS",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "METHODS_IN_JAVA",
+      "request": "launch",
+      "mainClass": "METHODS_IN_JAVA",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "PATTERN_BASED",
+      "request": "launch",
+      "mainClass": "PATTERN_BASED",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
+  ]
 }
