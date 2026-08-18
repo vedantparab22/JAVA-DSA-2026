@@ -627,262 +627,262 @@ Perfect Encapsulation ke liye:
 // ---------------------------------------------------------
 // STUDENT CLASS
 // ---------------------------------------------------------
+// CODE BEGINS HERE BELOWWWWWWWWWWWW
+// class Student {
 
-class Student {
+//     /*
+//     -------------------------------------------------------
+//     PRIVATE DATA MEMBERS
+//     -------------------------------------------------------
 
-    /*
-    -------------------------------------------------------
-    PRIVATE DATA MEMBERS
-    -------------------------------------------------------
+//     Ye variables private hain.
 
-    Ye variables private hain.
+//     Isliye Student class ke bahar directly:
 
-    Isliye Student class ke bahar directly:
+//         A.age
+//         A.gf
 
-        A.age
-        A.gf
+//     access nahi kar sakte.
 
-    access nahi kar sakte.
+//     Ye DATA HIDING hai.
+//     */
 
-    Ye DATA HIDING hai.
-    */
+//     private int age;
+//     private String gf;
 
-    private int age;
-    private String gf;
 
+//     /*
+//     -------------------------------------------------------
+//     PUBLIC DATA MEMBERS
+//     -------------------------------------------------------
 
-    /*
-    -------------------------------------------------------
-    PUBLIC DATA MEMBERS
-    -------------------------------------------------------
+//     Ye sirf concept samjhane ke liye public rakhe hain.
 
-    Ye sirf concept samjhane ke liye public rakhe hain.
+//     Perfect Encapsulation mein normally inhe bhi private
+//     rakhenge.
+//     */
 
-    Perfect Encapsulation mein normally inhe bhi private
-    rakhenge.
-    */
+//     public int id;
+//     public String name;
+//     public int nos;
 
-    public int id;
-    public String name;
-    public int nos;
 
+//     /*
+//     -------------------------------------------------------
+//     CONSTRUCTOR
+//     -------------------------------------------------------
 
-    /*
-    -------------------------------------------------------
-    CONSTRUCTOR
-    -------------------------------------------------------
+//     Object create karte waqt values initialize hongi.
 
-    Object create karte waqt values initialize hongi.
+//     IMPORTANT:
 
-    IMPORTANT:
+//     Java mein named arguments nahi hote.
 
-    Java mein named arguments nahi hote.
+//     WRONG:
 
-    WRONG:
+//         new Student(
+//             id: 1,
+//             age: 21
+//         );
 
-        new Student(
-            id: 1,
-            age: 21
-        );
+//     CORRECT:
 
-    CORRECT:
+//         new Student(
+//             1,
+//             21
+//         );
+//     */
 
-        new Student(
-            1,
-            21
-        );
-    */
+//     Student(int id, int age, String name, int nos, String gf) {
 
-    Student(int id, int age, String name, int nos, String gf) {
+//         this.id = id;
+//         this.age = age;
+//         this.name = name;
+//         this.nos = nos;
+//         this.gf = gf;
+//     }
 
-        this.id = id;
-        this.age = age;
-        this.name = name;
-        this.nos = nos;
-        this.gf = gf;
-    }
 
+//     /*
+//     -------------------------------------------------------
+//                     GETTER
+//     -------------------------------------------------------
 
-    /*
-    -------------------------------------------------------
-                    GETTER
-    -------------------------------------------------------
+//     Getter ka use private variable ki value READ karne
+//     ke liye hota hai.
 
-    Getter ka use private variable ki value READ karne
-    ke liye hota hai.
+//         getAge() -> age return karega
+//         getGf()  -> gf return karega
+//     */
 
-        getAge() -> age return karega
-        getGf()  -> gf return karega
-    */
+//     public int getAge() {
+//         return age;
+//     }
 
-    public int getAge() {
-        return age;
-    }
+//     public String getGf() {
+//         return gf;
+//     }
 
-    public String getGf() {
-        return gf;
-    }
 
+//     /*
+//     -------------------------------------------------------
+//                     SETTER
+//     -------------------------------------------------------
 
-    /*
-    -------------------------------------------------------
-                    SETTER
-    -------------------------------------------------------
+//     Setter ka use private variable ki value UPDATE karne
+//     ke liye hota hai.
 
-    Setter ka use private variable ki value UPDATE karne
-    ke liye hota hai.
+//         setAge() -> age change karega
+//         setGf()  -> gf change karega
+//     */
 
-        setAge() -> age change karega
-        setGf()  -> gf change karega
-    */
+//     public void setAge(int age) {
 
-    public void setAge(int age) {
+//         /*
+//         Validation bhi laga sakte hain.
 
-        /*
-        Validation bhi laga sakte hain.
+//         Age negative nahi honi chahiye.
+//         */
 
-        Age negative nahi honi chahiye.
-        */
+//         if (age >= 0) {
+//             this.age = age;
+//         } 
+//         else {
+//             System.out.println("Age cannot be negative!");
+//         }
+//     }
 
-        if (age >= 0) {
-            this.age = age;
-        } 
-        else {
-            System.out.println("Age cannot be negative!");
-        }
-    }
+//     public void setGf(String gf) {
+//         this.gf = gf;
+//     }
+// }
 
-    public void setGf(String gf) {
-        this.gf = gf;
-    }
-}
 
+// // ---------------------------------------------------------
+// // MAIN CLASS
+// // ---------------------------------------------------------
 
-// ---------------------------------------------------------
-// MAIN CLASS
-// ---------------------------------------------------------
+// public class encapsulation {
 
-public class encapsulation {
+//     public static void main(String[] args) {
 
-    public static void main(String[] args) {
+//         /*
+//         ===================================================
+//                     OBJECT CREATION
+//         ===================================================
 
-        /*
-        ===================================================
-                    OBJECT CREATION
-        ===================================================
+//         Student ka object A create kar rahe hain.
 
-        Student ka object A create kar rahe hain.
+//         IMPORTANT:
 
-        IMPORTANT:
+//         Java mein constructor arguments ko naam nahi dete.
 
-        Java mein constructor arguments ko naam nahi dete.
+//         WRONG:
 
-        WRONG:
+//             id: 1
+//             age: 21
+//             name: "Rahul"
 
-            id: 1
-            age: 21
-            name: "Rahul"
+//         CORRECT:
 
-        CORRECT:
+//             1
+//             21
+//             "Rahul"
+//         */
 
-            1
-            21
-            "Rahul"
-        */
+//         Student A = new Student(
+//             1,
+//             21,
+//             "Rahul",
+//             3,
+//             "Tina"
+//         );
 
-        Student A = new Student(
-            1,
-            21,
-            "Rahul",
-            3,
-            "Tina"
-        );
 
+//         /*
+//         ===================================================
+//                     PUBLIC DATA ACCESS
+//         ===================================================
 
-        /*
-        ===================================================
-                    PUBLIC DATA ACCESS
-        ===================================================
+//         id, name aur nos public hain.
 
-        id, name aur nos public hain.
+//         Isliye directly access kar sakte hain.
+//         */
 
-        Isliye directly access kar sakte hain.
-        */
+//         System.out.println("ID   : " + A.id);
+//         System.out.println("Name : " + A.name);
+//         System.out.println("NOS  : " + A.nos);
 
-        System.out.println("ID   : " + A.id);
-        System.out.println("Name : " + A.name);
-        System.out.println("NOS  : " + A.nos);
 
+//         /*
+//         ===================================================
+//                     PRIVATE DATA ACCESS
+//         ===================================================
 
-        /*
-        ===================================================
-                    PRIVATE DATA ACCESS
-        ===================================================
+//         Ye directly nahi kar sakte:
 
-        Ye directly nahi kar sakte:
+//             A.age;
+//             A.gf;
 
-            A.age;
-            A.gf;
+//         Kyunki age aur gf PRIVATE hain.
 
-        Kyunki age aur gf PRIVATE hain.
+//         Isliye compiler error dega.
+//         */
 
-        Isliye compiler error dega.
-        */
 
+//         /*
+//         ===================================================
+//                     GETTER
+//         ===================================================
 
-        /*
-        ===================================================
-                    GETTER
-        ===================================================
+//         Private age ko getter ke through access kar rahe hain.
 
-        Private age ko getter ke through access kar rahe hain.
+//             A.getAge()
 
-            A.getAge()
+//         Getter public hai, isliye outside class se call
+//         kar sakte hain.
+//         */
 
-        Getter public hai, isliye outside class se call
-        kar sakte hain.
-        */
+//         System.out.println("Age  : " + A.getAge());
 
-        System.out.println("Age  : " + A.getAge());
+//         System.out.println("GF   : " + A.getGf());
 
-        System.out.println("GF   : " + A.getGf());
 
+//         /*
+//         ===================================================
+//                     SETTER
+//         ===================================================
 
-        /*
-        ===================================================
-                    SETTER
-        ===================================================
+//         Private age ko directly change nahi kar sakte:
 
-        Private age ko directly change nahi kar sakte:
+//             A.age = 25;       // ERROR
 
-            A.age = 25;       // ERROR
+//         Isliye setter use karte hain:
 
-        Isliye setter use karte hain:
+//             A.setAge(25);
+//         */
 
-            A.setAge(25);
-        */
+//         A.setAge(25);
 
-        A.setAge(25);
+//         System.out.println("New Age : " + A.getAge());
 
-        System.out.println("New Age : " + A.getAge());
 
+//         /*
+//         ===================================================
+//                     VALIDATION
+//         ===================================================
 
-        /*
-        ===================================================
-                    VALIDATION
-        ===================================================
+//         Setter ke andar validation hai.
 
-        Setter ke andar validation hai.
+//         Isliye negative age accept nahi hogi.
+//         */
 
-        Isliye negative age accept nahi hogi.
-        */
+//         A.setAge(-10);
 
-        A.setAge(-10);
+//     }
+// }
 
-    }
-}
-
-
+// CODE ENDS HEREEEEEE
 
 
 
@@ -932,3 +932,217 @@ Agar saare data members private hain aur getters/setters se access diya gaya hai
 // GF   : Tina
 // New Age : 25
 // Age cannot be negative!
+
+// if all attributes are private its pure encapsulation but aise to kuch dikhega hi kaise ??
+//so we keep a public attributed linking to those private ones 
+
+/*
+===========================================================
+                PERFECT ENCAPSULATION
+===========================================================
+
+Yahan Student class ke SAARE ATTRIBUTES private hain.
+
+    private int id;
+    private int age;
+    private String name;
+    private int nos;
+    private String gf;
+
+Iska matlab:
+
+    Outside class directly inhe access NAHI kar sakti.
+
+    s.id       ❌
+    s.age      ❌
+    s.name     ❌
+    s.nos      ❌
+    s.gf       ❌
+
+Isliye ye PURE / PERFECT ENCAPSULATION ka example hai.
+
+-----------------------------------------------------------
+PROBLEM:
+-----------------------------------------------------------
+
+Agar saare attributes private hain, toh outside class
+inhe access kaise karegi?
+
+SOLUTION:
+
+Hum ek PUBLIC METHOD create karte hain.
+
+Example:
+
+    public String getName()
+
+Ye public method outside world aur private data ke
+beech ek LINK / BRIDGE ki tarah kaam karta hai.
+
+          OUTSIDE WORLD
+                |
+                | getName()
+                ↓
+        +---------------+
+        |   Student     |
+        |---------------|
+        | private name  |
+        +---------------+
+
+Outside world private name ko DIRECTLY access nahi kar rahi.
+
+Wo public method ke through controlled access kar rahi hai.
+*/
+
+
+class Student {
+
+    // =====================================================
+    // ALL ATTRIBUTES ARE PRIVATE
+    // =====================================================
+
+    private int id;
+    private int age;
+    private String name;
+    private int nos;
+    private String gf;
+
+
+    /*
+    ========================================================
+                    PUBLIC GETTER
+    ========================================================
+
+    Ye public method private 'name' ke liye ek LINK hai.
+
+    Outside class:
+
+        s.getName()
+
+    call kar sakti hai.
+
+    Lekin:
+
+        s.name
+
+    nahi kar sakti because name PRIVATE hai.
+    */
+
+    public String getName() {
+
+        // Current object ka private name return hoga.
+        return this.name;
+    }
+
+
+    /*
+    ========================================================
+                    CONSTRUCTOR
+    ========================================================
+
+    Constructor private attributes ko initial value
+    dene ke liye use ho raha hai.
+    */
+
+    public Student(int id, int age, String name, int nos, String gf) {
+
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.nos = nos;
+        this.gf = gf;
+    }
+}
+
+
+/*
+============================================================
+                        MAIN
+============================================================
+*/
+
+public class encapsulation {
+
+    public static void main(String[] args) {
+
+        // Student object create kiya
+        Student s = new Student(
+            1,
+            21,
+            "Rahul",
+            3,
+            "Tina"
+        );
+
+
+        /*
+        ====================================================
+        DIRECT ACCESS
+        ====================================================
+
+        Ye sab ERROR denge because ALL attributes are private.
+
+            s.id;
+            s.age;
+            s.name;
+            s.nos;
+            s.gf;
+
+        ❌ DIRECT ACCESS NOT ALLOWED
+        */
+
+
+        /*
+        ====================================================
+                    CONTROLLED ACCESS
+        ====================================================
+
+        Private 'name' ko directly access nahi kiya.
+
+        Instead public getName() method ko call kiya.
+
+            s.getName()
+                 |
+                 ↓
+            private name
+                 |
+                 ↓
+              "Rahul"
+
+        Ye public method private data ke liye
+        LINK / BRIDGE ki tarah kaam kar raha hai.
+        */
+
+        System.out.println(s.getName());
+    }
+}
+
+/*
+Sir ke concept ko diagram se yaad rakho
+             OUTSIDE CLASS
+                  |
+                  |
+             s.getName()
+                  |
+                  ↓
+        +-------------------+
+        |      Student      |
+        |                   |
+        |  private id       |
+        |  private age      |
+        |  private name     |
+        |  private nos      |
+        |  private gf       |
+        |                   |
+        |-------------------|
+        |  public getName() |  ← LINK / BRIDGE
+        +-------------------+
+                  |
+                  ↓
+          private name
+
+Core idea:
+
+All attributes private → direct access impossible → public getter/setter methods provide controlled access → this is Perfect Encapsulation.
+
+And getName() attribute nahi hai — it's a public method that acts as the controlled access point to the private name attribute. */
