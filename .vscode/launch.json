@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "inheritance",
+      "request": "launch",
+      "mainClass": "inheritance",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "encapsulation",
+      "request": "launch",
+      "mainClass": "encapsulation",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "class_object_constructor",
+      "request": "launch",
+      "mainClass": "class_object_constructor",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
+      "name": "class_object_constructor$App",
+      "request": "launch",
+      "mainClass": "class_object_constructor$App",
+      "projectName": "DSA 2026_4585aac1"
+    },
+    {
+      "type": "java",
       "name": "OOP",
       "request": "launch",
       "mainClass": "OOP",

@@ -48,3 +48,23 @@ JAVA-DSA-2026/
 │
 ├── .gitignore
 └── README.md
+
+
+ALSO NOTE - U IN GITHUB FILE MEANS UNTRACKED FILES, M MEANS MODIFIED
+IF TERMINAL CANT RUN CODE DUE TO WRONG LOCATION USE - EG:-
+
+PS C:\Users\Vedant\Desktop\DSA 2026>
+THEN
+USE TERMINAL - PS C:\Users\Vedant\Desktop\DSA 2026> cd BASICS
+PS C:\Users\Vedant\Desktop\DSA 2026\BASICS> javac filename.java
+PS C:\Users\Vedant\Desktop\DSA 2026\BASICS> java filename.java
+
+then enter and could would run
+```
+
+git commands - git version (check existence of git)
+
+git status (check untracked or modified files)
+git add . (or) git add filename.java
+git commit -m "write your message"
+git push
